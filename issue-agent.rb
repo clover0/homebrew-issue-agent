@@ -5,20 +5,20 @@
 class IssueAgent < Formula
   desc ""
   homepage ""
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.5.0/issue-agent_darwin_amd64.tar.gz"
-      sha256 "d92bbe34c45da1c47a7e051053f9a63e769ef0f8ea3864f9f38d871f1dd6d3b1"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.6.0/issue-agent_darwin_amd64.tar.gz"
+      sha256 "58c7eb567e56d53a047d49bfb6ee58b17af1e7caea8ba2fff1569af7dce4a604"
 
       def install
         bin.install "issue-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.5.0/issue-agent_darwin_arm64.tar.gz"
-      sha256 "6187a8788db13b57ffe5a9ce0e44821037e89673f6dd927e78ea74959734cc59"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.6.0/issue-agent_darwin_arm64.tar.gz"
+      sha256 "f679b7e1eea5fa2f08a36114ce13e619c32815fd927e28a990e2800f636424fc"
 
       def install
         bin.install "issue-agent"
@@ -29,8 +29,8 @@ class IssueAgent < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/clover0/issue-agent/releases/download/v0.5.0/issue-agent_linux_amd64.tar.gz"
-        sha256 "7e094c2e455cddc39ca0f78211dc562675601e753834ed09ccaa5e6ab3d74f77"
+        url "https://github.com/clover0/issue-agent/releases/download/v0.6.0/issue-agent_linux_amd64.tar.gz"
+        sha256 "926dc4a864cf8a64f1c14681abf00d5957a7a383bc514fde4796d337f8ee2116"
 
         def install
           bin.install "issue-agent"
@@ -39,8 +39,8 @@ class IssueAgent < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/clover0/issue-agent/releases/download/v0.5.0/issue-agent_linux_arm64.tar.gz"
-        sha256 "0645e43d90f90fb046ca1de022fa0b6c6ac7ceb3f67296ba644a925f359dd6b1"
+        url "https://github.com/clover0/issue-agent/releases/download/v0.6.0/issue-agent_linux_arm64.tar.gz"
+        sha256 "9297ed6191bc221e9a98bd83a1a20b9bd9f4a565163a8449b46d85b37b411597"
 
         def install
           bin.install "issue-agent"
