@@ -5,20 +5,20 @@
 class IssueAgent < Formula
   desc ""
   homepage ""
-  version "0.19.1"
+  version "0.19.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.19.1/issue-agent_darwin_amd64.tar.gz"
-      sha256 "df7d48f827e10a4c7243153b48d08146697e69309916645c5e91196be96e12f7"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.19.2/issue-agent_darwin_amd64.tar.gz"
+      sha256 "75278f8bf8cfa9fca357beeec6c55406dc967a5eff68b7b77113ce4625521615"
 
       def install
         bin.install "issue-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.19.1/issue-agent_darwin_arm64.tar.gz"
-      sha256 "7c60e65b85dacd4cd4236b898072e4ee85dac72c5d15b232f319e978c1f62b76"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.19.2/issue-agent_darwin_arm64.tar.gz"
+      sha256 "d2eab78e14014886e7c8dc600fa5c63a49f3091262f650483326a34e939f022c"
 
       def install
         bin.install "issue-agent"
@@ -28,15 +28,15 @@ class IssueAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.19.1/issue-agent_linux_amd64.tar.gz"
-      sha256 "81446406cd616ef0840184f328f19a7f4ec731b2f4917841183ce5566e9033ff"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.19.2/issue-agent_linux_amd64.tar.gz"
+      sha256 "48091787575e8641fa8b11d2d3f747df60f836cdf1fb6c85db2cd22ae677f22d"
       def install
         bin.install "issue-agent"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/clover0/issue-agent/releases/download/v0.19.1/issue-agent_linux_arm64.tar.gz"
-      sha256 "07641959f31f7d89c1b6130b55d77b9cf2cf5c491528e25b98b27d39240f1944"
+      url "https://github.com/clover0/issue-agent/releases/download/v0.19.2/issue-agent_linux_arm64.tar.gz"
+      sha256 "97cc3f0f69a41ccfce41521d8e42f7eeb757eaaa5860adb044ef0f9ebb9fc46a"
       def install
         bin.install "issue-agent"
       end
